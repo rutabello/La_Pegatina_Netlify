@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'neontubes';
+  src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
+  src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot?#iefix") format("embedded-opentype"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff2") format("woff2"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff") format("woff"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: url(../../Pictures/background_img_left.png) left top no-repeat,url(../../Pictures/background_img_right.png) right top no-repeat #1a1b39;
+  margin:0
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  font-family: "neontubes";
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.playWith {
+  font-family: 'Satisfy', cursive;
+  font-size: 5vw;
+  margin: 0;
+  color: #D4EAFF;
+  text-shadow: 0 0 0 transparent, 0 0 10px #2695FF, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695FF, 0 0 100px #2695FF, 0 0 200px #2695FF, 0 0 300px #2695FF, 0 0 500px #2695FF;
+  animation: buzz 0.01s infinite alternate;
+}
+
+.laPegatina {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 300px;
+  animation: fadeEffect 3s linear infinite;
+  opacity: 1;
+}
+
+/* Start game button */
+
+.btn-game {
+	box-shadow:inset 0px 0px 15px 3px #9fb4f2;
+	background:linear-gradient(to bottom, #302c71 5%, #2b2761 100%);
+	background-color:#302c71;
+	border-radius:24px;
+	border:1px solid #545180;
+	cursor:pointer;
+	color:#ffffff;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
+  
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2vw;
+  padding: 10px 30px;
+  font-weight: 600;
+  opacity: 0.6;
+  letter-spacing: 3px;
+  margin:  5px 0 15px 0;
+  display: block;
+}       
+
+
+.btn-game:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 750px) {
+  .btn-game {
+  margin: auto;
+  font-size: 4vw;
+  display: block;
+  margin-bottom: 15px;
+  }
+
+  .playWith {
+    font-size: 13vw;
+  }
+
+  .laPegatina {
+    height: 150px;
+  }
+}
+
+
+/* Not used for now */
+/* .webdev span:nth-child(2) {
+  animation-delay: 6s;
+} */
+
+
+/* Animation frames */
+@keyframes buzz {
+  70% {
+    opacity: 0.80;
+  }
+}
+
+@keyframes fadeEffect {
+  0% { opacity: 1; }
+  5% { opacity: 1; -ms-transform: translateY(0px); }
+  10% { opacity: 0; -ms-transform: translateY(0px); }
+  25% { opacity: 0; -ms-transform: translateY(0px); }
+  30% { opacity: 1; -ms-transform: translateY(0px); }
+  80% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+/* Not used now, could be applied to another
+word of the title */
+@keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+
+
+/* Responsive */
+@media screen and (min-width: 1000px) {
+
+}
+
+@media only screen and (max-width: 750px) {
+  .main .socod {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+
+}
