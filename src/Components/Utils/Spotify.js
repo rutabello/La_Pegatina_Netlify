@@ -2,7 +2,7 @@
 // import { TOKEN } from './token'
 const clientId = "5a36a3d1f9bc4712b321e760813bb8f6";
 // const redirectUri = 'http://playwith.es'; 
-const redirectUri = 'http://localhost:3000/game';
+const redirectUri = 'https://juegaconlapegatina.netlify.com/';
 
 let accessToken;
 // for connection with the map: connect playlist id to the markers and save it in a const to insert it later in the 
